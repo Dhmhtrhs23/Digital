@@ -1,0 +1,233 @@
+      <!-- Start Landing Page -->
+      <style>
+        /* Start Global Rules */
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* End Global Rules */
+
+/* Start Landing Page */
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+@media (max-width: 767px) {
+  .landing-page header {
+    min-height: auto;
+    display: initial;
+  }
+}
+.landing-page header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .landing-page header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+.landing-page header .logo {
+  color: #5d5d5d;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .landing-page header .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .landing-page header .links {
+    text-align: center;
+    gap: 10px;
+  }
+}
+.landing-page header .links li {
+  margin-left: 30px;
+  color: #5d5d5d;
+  cursor: pointer;
+  transition: .3s;
+}
+@media (max-width: 767px) {
+  .landing-page header .links li {
+    margin-left: auto;
+  }
+}
+.landing-page header .links li:last-child {
+  border-radius: 20px;
+  padding: 10px 20px;
+  color: white;
+  background-color: #63ff63;
+}
+.landing-page header .links li:hover {
+  color: #63ff70;
+  background-color: white;
+}
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  min-height: calc(40vh - 50px);
+}
+@media (max-width: 767px) {
+  .landing-page .content .container {
+    gap: 0;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 767px) {
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px 
+  }
+}
+.landing-page .content .info h1 {
+  color: #5d5d5d;
+  font-size: 44px;
+}
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+}
+.landing-page .content .info button {
+  border: 0;
+  border-radius: 20px;
+  padding: 12px 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  color: white;
+  background-color: #63ff78;
+  transition: 0.5s;
+}
+
+.landing-page .content .info button:hover {
+  color: #63ff78;
+  background-color: white;
+  transition: 0.6s;
+}
+
+body {
+ background-image: url("foodBackground.jpg");
+ background-color: #d1e4d7;
+}
+
+b:hover {
+  color:rgb(122, 167, 139);
+}
+.footer p{
+  margin: 0;
+  line-height: 1.6;
+  font-size: 15px;
+  color: #5d5d5d;
+  text-align: left;
+  padding: 30px;    
+}
+        </style>
+        
+        <center><div class="landing-page" style="background-color: white;width: 70%;border-radius: 4%;box-shadow: 20px 0px 90px 5px rgba(41, 185, 5, 0.8);" >
+        <header>
+          <div class="container">
+            <a href="#" class="logo">Food <b>Rescue</b> System </a>
+            <ul class="links">
+              <li>Home</li>
+              <li>About Us</li>
+              <li onclick="window.location.href='dashboard.php'"">Dashboard</li>
+            </ul>
+          </div>
+        </header>
+        <div class="content">
+          <div class="container">
+            <div class="info">
+              <h1>Food Rescue System</h1>
+              <p style="float: center;">Welcome to <b>FRS(Food Rescue System)</b>. To get started you can press the <b>"Dashboard"</b> Button on the top right of your screen, or the button bellow to transfer you to our main page and create a <b>free</b> account on our website</p>
+              <button onclick="window.location.href='dashboard.php'">Enter The Dashboard</button>
+            </div>
+          </div>
+        </div>  
+        <div class="content">
+          <div class="container">
+            <div class="info">
+              <h1>About Us</h1>
+              <p>We first started our company in 2017 and we are still up and running in 2023. It started to become popular in the middle of the world wide
+              pandemic with corona virus. The inspiration for our name FRS is from an assignment during our high school years called the Food Resource System. You can find more information about our concept by pressing the <b>Learn More</b> button right bellow</p>
+              <div class="learnMore">
+                <form action="https://en.wikipedia.org/wiki/Food_rescue" method="get" target="_blank">
+                  <button type="submit">Learn More</button>
+                </form>
+              </div>
+            </div> 
+          </div>
+        </div>
+        <div class="content">
+            <div class="info">
+              <h1>Find Us</h1>
+              <p> <b>FoodRescueSystem</b> on Instagram</p>
+              <p> <b>FoodRescueOfficial</b> on Facebook</p>
+              <p> <b>FoodRescue</b> on Instagram</p>
+              <p> <b>FRSOfficial</b> on Facebook</p>
+              <div>
+                  <button>All Socials</button>
+                </form>
+            </div> 
+        </div>
+        <br>
+        <br>
+        
+        <footer>
+        <hr>
+        <div class="footer">
+            <div class="info">
+              <p>Copyright © 2023 All Rights Reserved by <b>FoodRescueSystem</b>.</p> 
+            </div>
+        </div>
+        </footer>
